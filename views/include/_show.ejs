@@ -1,0 +1,25 @@
+
+<% for(var i=0; i < animals.length; i++) { %>
+<tr>
+    <td> <%= i +1 %> </td>
+    <td> <%= animals[i].name %> </td>
+    <td> <%= animals[i].irishName %> </td>
+    <td> <%= animals[i].animalClass %> </td>
+    <td> <%= animals[i].animalOrder %> </td>
+    <td> <%= animals[i].groupName %> </td>
+    <td> <%= animals[i].iucn %> </td>
+    <td> <%= moment(animals[i].arrivalDate).format('Do MMMM, YYYY') %> </td>
+    <td> <%= animals[i].description %> </td>
+    <td> <%= animals[i].status %> </td>
+    
+    <td>
+        <a href="/update-animal?id=<%= animals[i]._id%>" class="btn border-shadow update">
+            <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+        </a>
+        <a class="btn border-shadow delete" data-id=<%= animals[i]._id%> >
+            <span class="text-gradient"><i class="fas fa-times"></i></span>
+        </a>
+    </td>
+</tr>
+
+<% } %>

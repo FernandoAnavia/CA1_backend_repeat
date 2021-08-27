@@ -1,0 +1,54 @@
+<!--form handling-->
+<form action="/api/animals" method="POST" id="add_animal">
+    <div class="new_animal">
+        <div class="form-group">
+            <label for="name" class="text-light">Name</label>
+            <input type="hidden" name="Id" value="">
+            <input type="text" name="name" value="" placeholder="text">
+        </div>
+        <div class="form-group">
+            <label for="irishName" class="text-light">Irish Name</label>
+            <input type="text" name="irishName" value="" placeholder="text">
+        </div>
+        <div class="form-group">
+            <label for="animalClass" class="text-light">Animal Class</label>
+            <input type="text" name="animalClass" value="" placeholder="text">
+        </div>
+        <div class="form-group">
+            <label for="animalOrder" class="text-light">Animal Order</label>
+            <input type="text" name="animalOrder" value="" placeholder="text">
+        </div>
+        <div class="form-group">
+            <label for="groupName" class="text-light">Group Name</label>
+            <input type="text" name="groupName" value="" placeholder="text">
+        </div>
+        <div class="form-group">
+            <label for="iucn" class="text-light">IUCN status</label>
+            <input type="text" name="iucn" value="" placeholder="text">
+        </div>
+        <div class="form-group">
+            <label for="arrivalDate" class="text-light">Arrival Date</label>
+            <input type="date" name="arrivalDate" value="" placeholder="text">
+        </div>
+        <div class="form-group">
+            <label for="description" class="text-light">Description</label>
+            <input type="text" name="description" value="" placeholder="text">
+        </div>
+        <div class="form-group">
+            <label for="status" class="text-light">Status</label>
+            <div class="radio inline">
+                <input type="radio" id="radio-2" name="status" value="Active">
+                <label for="radio-2" class="radio-label">Active</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-3" name="status" value="Inactive">
+                <label for="radio-3" class="radio-label">Inactive</label>
+            </div>    
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">Save</button>
+        </div>
+
+    </div>
+</form>
